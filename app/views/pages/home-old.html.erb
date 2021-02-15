@@ -1,0 +1,48 @@
+<div class="banner">
+
+  <script src="typed.js"></script>
+
+  <div class="container dynamic-box">
+    <div class="text-home">
+      <div class="header">
+        <h1 class="prefix">Welcome <span id="typed"></span></h1>
+      </div>
+      <div class="tagline">
+        <h2>The page for all space-related news.</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Most recent launch: CCAFS Space Launch Complex 41</h2>
+<div class="container all-cards">
+  <div class="row cards-background"></div>
+      <div class="card-product col-lg-5">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+        <div class="card-product-infos">
+          <h3>18th March 2020</h3>
+          <p>GOES-17 is the second of the current generation of weather satellites operated by the National Oceanic and Atmospheric Administration. The four satellites of the series will extend the availability of the GOES until 2036 for weather forecast and meteorology research</p>
+        </div>
+      </div>
+
+      <div class="card-product col-lg-5">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+        <div class="card-product-infos">
+          <h2>Upcoming launch: CCAFS Space Launch Complex 41</h2>
+          <h3>18th March 2020</h3>
+          <p>GOES-17 is the second of the current generation of weather satellites operated by the National Oceanic and Atmospheric Administration. The four satellites of the series will extend the availability of the GOES until 2036 for weather forecast and meteorology research</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"></div>
+  <div class="row"></div>
+</div>
+
+
+<div class="container">
+  <div id="map"
+       style="width: 100%; height: 600px;"
+       data-markers="<%= @markers.to_json %>"
+       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+</div>
